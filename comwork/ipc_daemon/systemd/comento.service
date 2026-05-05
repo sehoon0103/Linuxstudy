@@ -1,0 +1,14 @@
+[Unit]
+Description=Comento example service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/comento-daemon
+StandardOutput=journal
+Restart=on-failure
+StartLimitIntervalSec=1s
+StartLimitBurst=32
+
+
+[Install]
+WantedBy=basic.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=socket for Comento Example service
+
+[Socket]
+ListenStream=/run/comento.sock
+
+[Install]
+WantedBy=sockets.target
